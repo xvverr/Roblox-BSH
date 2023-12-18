@@ -1,5 +1,4 @@
 -- Created by xvverr
-local print("Created by xvverr")
 local UIS = game:GetService("UserInputService")
 
 local function makeDraggable(frame)
