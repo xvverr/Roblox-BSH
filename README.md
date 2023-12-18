@@ -14,6 +14,7 @@ Access key:
 Tested to work with:
 - Fluxus
 - Krnl
+- Hydrogen
 
 **May** cause issues with:
 - None, yet..
