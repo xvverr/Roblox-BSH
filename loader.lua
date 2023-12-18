@@ -105,12 +105,13 @@ local function createHomeGui()
                 infoText.TextColor3 = Color3.new(1, 1, 1)
                 infoText.Parent = HomeGui
 
-                loadstring(game:HttpGet("https://pastebin.com/raw/frHvA27v"))()
+                print("Works only in Prison Life")
 
                 wait(5)
-
+ 
                 infoText:Destroy()
-                print("Works only in Prison Life")
+
+                loadstring(game:HttpGet("https://pastebin.com/raw/frHvA27v"))()
             end)
         elseif i == 3 then
             buttons[i] = createButton("Mobile Keyboard V1", buttonPositions[i])
