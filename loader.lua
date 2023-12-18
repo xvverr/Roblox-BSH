@@ -118,7 +118,7 @@ local function createHomeGui()
             buttons[i].MouseButton1Click:Connect(function()
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
             end)
-          if i == 4 then
+        elseif i == 4 then
             buttons[i] = createButton("Chat Encryption FE", buttonPositions[i])
             buttons[i].MouseButton1Click:Connect(function()
                 loadstring(game:HttpGet('https://raw.githubusercontent.com/xvverr/Roblox-BSH/main/dependency-1'))()
