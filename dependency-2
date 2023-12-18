@@ -9,8 +9,6 @@ local function sendMessageToPlayer(message)
     })
 end
 
-local sendMessageToPlayer("ChatCMDS loaded!")
-
 local function handlePlayerChange(player, isJoining)
     local username = player.Name
 
