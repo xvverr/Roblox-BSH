@@ -1,0 +1,40 @@
+-- Created by xvverr
+local Players = game:GetService("Players")
+local StarterGui = game:GetService("StarterGui")
+
+local function sendMessageToPlayer(message)
+    StarterGui:SetCore("ChatMakeSystemMessage", {
+        Text = message,
+        Color = Color3.new(1, 1, 1)
+    })
+end
+
+local function handlePlayerChange(player, isJoining)
+    local username = player.Name
+
+    if isJoining then
+        if player == game.Players.LocalPlayer then
+            sendMessageToPlayer("ChatCMDS loaded!")
+        else
+            if player:IsFriendsWith(game.Players.LocalPlayer.UserId) then
+                sendMessageToPlayer("Your friend " .. username .. " has joined the game.")
+            else
+                sendMessageToPlayer(username .. " has joined the server.")
+            end
+        end
+    else
+        if player:IsFriendsWith(game.Players.LocalPlayer.UserId) then
+            sendMessageToPlayer("Your friend " .. username .. " has left the game.")
+        else
+            sendMessageToPlayer(username .. " has left the server.")
+        end
+    end
+end
+
+Players.PlayerAdded:Connect(function(player)
+    handlePlayerChange(player, true)
+end)
+
+Players.PlayerRemoving:Connect(function(player)
+    handlePlayerChange(player, false)
+end)
