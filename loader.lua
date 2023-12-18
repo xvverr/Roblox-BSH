@@ -94,23 +94,9 @@ local function createHomeGui()
                 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
             end)
         elseif i == 2 then
-            buttons[i] = createButton("Grab Knife V3 FE", buttonPositions[i])
+            buttons[i] = createButton("Grab Knife V3 FD", buttonPositions[i])
             buttons[i].MouseButton1Click:Connect(function()
-                print("Works only in Prison Life")
-                local infoText = Instance.new("TextLabel")
-                infoText.Text = "Works only in Prison Life"
-                infoText.Size = UDim2.new(0, 200, 0, 50)
-                infoText.Position = UDim2.new(0.5, -100, 0.5, -25)
-                infoText.BackgroundColor3 = Color3.new(0.2, 0.2, 0.2)
-                infoText.TextColor3 = Color3.new(1, 1, 1)
-                infoText.Parent = HomeGui
-
-                print("Works only in Prison Life")
-
-                wait(5)
- 
-                infoText:Destroy()
-
+                print("Works only in Prison Life. You have to be R6.")
                 loadstring(game:HttpGet("https://pastebin.com/raw/frHvA27v"))()
             end)
         elseif i == 3 then
