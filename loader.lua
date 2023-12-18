@@ -109,6 +109,11 @@ local function createHomeGui()
             buttons[i].MouseButton1Click:Connect(function()
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/xvverr/Roblox-BSH/main/dependency-1"))()
             end)
+        elseif i == 5 then
+            buttons[i] = createButton("Chill GUI (Remake)", buttomPositions[i])
+            buttons[i].MouseButton1Click:Connect(function()
+                loadstring(game:HttpGet("https://github.com/xvverr/Roblox-BSH/blob/main/dependency-2"))()
+            end)  
         else
             buttons[i] = createButton("Empty", buttonPositions[i])
             buttons[i].MouseButton1Click:Connect(function()
