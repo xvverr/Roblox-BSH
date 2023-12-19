@@ -193,6 +193,6 @@ createLoginGui()
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
 
-Title = "Basic Script Hub"; Text = "Loaded, have fun! :D"; Icon = "rbxthumb://type=Asset&id=15444430930&w=150&h=150"})
+Title = "Christmas Penguin"; Text = "Merry Christmas, and thank you for using BSH. Enjoy! :D"; Icon = "rbxthumb://type=Asset&id=15444430930&w=150&h=150"})
 
 Duration = 5;
