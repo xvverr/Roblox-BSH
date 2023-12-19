@@ -31,8 +31,24 @@ local function handlePlayerChange(player, isJoining)
     end
 end
 
+local function handlePlayerDeath(player)
+    local username = player.Name
+
+    if player == game.Players.LocalPlayer then
+        sendMessageToPlayer("You have died.")
+    else
+        sendMessageToPlayer(username .. " has died.")
+    end
+end
+
 Players.PlayerAdded:Connect(function(player)
     handlePlayerChange(player, true)
+
+    player.CharacterAdded:Connect(function()
+        player.Character:WaitForChild("Humanoid").Died:Connect(function()
+            handlePlayerDeath(player)
+        end)
+    end)
 end)
 
 Players.PlayerRemoving:Connect(function(player)
