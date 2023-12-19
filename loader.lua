@@ -190,3 +190,9 @@ wait(5)
 
 loadingGui:Destroy()
 createLoginGui()
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+
+Title = "Basic Script Hub"; Text = "Loaded, have fun! :D"; Icon = "rbxthumb://type=Asset&id=15444430930&w=150&h=150"})
+
+Duration = 5;
