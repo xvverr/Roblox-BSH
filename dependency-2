@@ -17,14 +17,14 @@ local function handlePlayerChange(player, isJoining)
             sendMessageToPlayer("Game Utilities loaded!")
         else
             if player:IsFriendsWith(game.Players.LocalPlayer.UserId) then
-                sendMessageToPlayer("Your friend " .. username .. " has joined the game.")
+                sendMessageToPlayer("Your friend " .. username .. " has joined the server.")
             else
                 sendMessageToPlayer(username .. " has joined the server.")
             end
         end
     else
         if player:IsFriendsWith(game.Players.LocalPlayer.UserId) then
-            sendMessageToPlayer("Your friend " .. username .. " has left the game.")
+            sendMessageToPlayer("Your friend " .. username .. " has left the server.")
         else
             sendMessageToPlayer(username .. " has left the server.")
         end
