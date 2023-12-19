@@ -107,12 +107,12 @@ local function createHomeGui()
         elseif i == 4 then
             buttons[i] = createButton("Chat Encryption", buttonPositions[i])
             buttons[i].MouseButton1Click:Connect(function()
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/xvverr/Roblox-BSH/main/dependency-1"))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/xvverr/Roblox-BSH/main/dependency-1.lua"))()
             end)
         elseif i == 5 then
             buttons[i] = createButton("Game Utilities", buttonPositions[i])
             buttons[i].MouseButton1Click:Connect(function()
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/xvverr/Roblox-BSH/main/dependency-2"))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/xvverr/Roblox-BSH/main/dependency-2.lua"))()
             end)
         else
             buttons[i] = createButton("Cooming soon!", buttonPositions[i])
