@@ -114,6 +114,11 @@ local function createHomeGui()
             buttons[i].MouseButton1Click:Connect(function()
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/xvverr/Roblox-BSH/main/dependency-2"))()
             end)
+        elseif i == 6 then
+            buttons[i] = createButton("Netless Bypass", buttonPositions[i])
+            buttons[i].MouseButton1Click:Connect(function()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/xvverr/Roblox-BSH/main/dependency-3"))()
+            end)
         else
             buttons[i] = createButton("Cooming soon!", buttonPositions[i])
             buttons[i].MouseButton1Click:Connect(function()
